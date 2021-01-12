@@ -1,0 +1,20 @@
+# def get_links(html):
+#     soup = BeautifulSoup(html,'lxml')
+#     news = soup.find('ul', class_='topic_list view_lenta')
+
+#     links = []
+#     opis = []
+#     photos = []
+#     data = [links,opis,photos]
+#     for i in news:
+#         d = i.find('a').get('href')
+#         data[0].append(d)
+#         b = i.find('div', class_='t f_medium').find('a').find('span', class_='n').text
+#         data[1].append(b)
+#         try:
+#             c = i.find('img').get('data-src')
+#             data[2].append(c)
+#         except:
+#             pass
+#     # print(len(data[0]))
+#     return data
